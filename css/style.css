@@ -551,6 +551,54 @@ a {
     padding-right: 4rem;
 }
 
+@keyframes move-left {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes move-around-left {
+    0%{
+        transform: rotate(0deg) translateX(30px) rotate(0de);
+    }
+    100%{
+        transform: rotate(-360deg) translateX(30px) rotate(360deg);
+    }
+}
+@keyframes move-around-right {
+    0%{
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+    }
+}
+@keyframes gradient-button {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.move-around-left__20s{
+    animation: move-around-left 20s linear infinite;
+}
+.move-around-left__10s{
+    animation: move-around-left 10s linear infinite;
+}
+.move-around-right__10s{
+    animation: move-around-right 10s linear infinite;
+}
+.move-left__30s{
+    animation: move-left 30s linear infinite;
+}
+
 /* Header*/
 .header {
     background-color: var(--color-light);
