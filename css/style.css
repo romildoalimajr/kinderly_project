@@ -1,0 +1,144 @@
+/* variables */
+:root {
+    --color-primary: #ff6464;
+    --color-secondary: #081646;
+    --color-tertiary: #00ba59;
+    --color-quaternary: #ffcf55;
+    --color-quaternary__dark: #fab70d;
+    --color_dark: #333333;
+    --color_light: #fbf9f0;
+    --color-white: #ffffff;
+}
+
+/* base reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--color-secondary);
+    line-height: 1.5;
+    overflow-x: clip;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*:before,
+*:afeter{
+    box-sizing: inherit;
+}
+p{
+    color: var(--color_dark);
+    line-height: 1.5;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/* Tipography utilitieis */
+.font-baloo{
+    font-family: 'Baloo 2', cursive;
+}
+.font-w-400{
+    font-weight: 400;
+}
+.font-w-500{
+    font-weight: 500;
+}
+.font-w-600{
+    font-weight: 600;
+}
+.font-w-700{
+    font-weight: 700;
+}
+.font-w-800{
+    font-weight: 800;
+}
+.font-w-900{
+    font-weight: 900;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+ /* Layout Utilities */
+ .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+ }
+ .flex{
+    display: flex;
+ }
+ .wrap{
+    flex-wrap: wrap;
+ }
+ .flex-col{
+    flex-direction: column;
+ }
+ .flex-row{
+    flex-direction: row;
+ }
+ .flex-none{
+    flex: none;
+ }
+ .items-center{
+    align-items: center;
+ }
+ .justify-between{
+    justify-content: space-between;
+ }
+ .justify-center{
+    justify-content: center;
+ }
+ .justify-end{
+    justify-content: flex-end;
+ }
+ .justify-start{
+    justify-content: flex-start;
+ }
+ .flex-cols-3{
+    flex: 1 1 calc(33.333% - 4rem);
+    max-width: 33.33%;
+ }
+ .flex-cols-2{
+    flex: 1 1 calc(50% - 4rem);
+    max-width: 50%;
+ }
+ .gap-0-5{
+    gap: 0.5rem;
+ }
+ .gap-1{
+    gap: 1rem;
+ }
+ .gap-2{
+    gap: 2rem;
+ }
+ .gap-3{
+    gap: 3rem;
+ }
+ .gap-4{
+    gap: 4rem;
+ }
+ .gap-5{
+    gap: 5rem;
+ }
+ .flex-1{
+    flex: 1;
+ }
+ .transition{
+    transition: all .3s ease-in-out;
+ }
