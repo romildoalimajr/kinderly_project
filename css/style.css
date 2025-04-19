@@ -34,7 +34,7 @@ body{
     font-size: 100%;
 }
 *:before,
-*:afeter{
+*:after{
     box-sizing: inherit;
 }
 p{
@@ -207,7 +207,7 @@ a{
 }
 
 /* Buttons */
-.butto n{
+.button{
     display: inline-flex;
     padding: 1.6rem 3.2rem;
     transition:  all .3s ease-in-out;
