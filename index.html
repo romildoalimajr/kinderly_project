@@ -17,7 +17,46 @@
 
 <body>
 
-    <h1>Kinderly Headline</h1>
+    <!-- Header-->
+
+    <header class="header">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="assets/images/logo.png" alt="Kinderly Logo">
+                    </a>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul class="navigation_list flex flex-row gap-3 capitalize">
+                            <li class="navigation__item">
+                                <a href="index.html" class="navigation__link">Home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="#" class="navigation__link">Paths</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Activities</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Testimonials</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">FAQs</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="actions">
+                    <a href="" class="button button__transparent">Book a Tour</a>
+                </div>
+            </div>
+            <button class="menu-trigger">
+                <img class="size-100 contain" src="assets/icons/menu.png" alt="Menu Trigger">
+            </button>
+        </div>
+    </header>
 
     <script src="js/app.js"></script>
 </body>

@@ -5,8 +5,8 @@
     --color-tertiary: #00ba59;
     --color-quaternary: #ffcf55;
     --color-quaternary__dark: #fab70d;
-    --color_dark: #333333;
-    --color_light: #fbf9f0;
+    --color-dark: #333333;
+    --color-light: #fbf9f0;
     --color-white: #ffffff;
 }
 
@@ -157,6 +157,9 @@ a{
  .relative{
     position: relative;
  }
+ .menu-trigger{
+    display: none;
+ }
  
  /* Text size and more*/
 .text-xs{
@@ -202,3 +205,50 @@ a{
 .text-center{
     text-align: center;
 }
+
+/* Buttons */
+.butto n{
+    display: inline-flex;
+    padding: 1.6rem 3.2rem;
+    transition:  all .3s ease-in-out;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    border: .1rem solid transparent;
+    white-space: nowrap;
+}
+.button__transparent{
+    background-color: transparent;
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+.button__transparent:hover{
+    background-color: var(--color-white);
+}
+/* Header*/
+.header{
+    background-color: var(--color-light);
+    padding: 1.4rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.logo__link img{
+    width: 124px;
+    height: 124px;
+    object-fit: contain;
+}
+.navigation__list{
+    list-style: none;
+}
+.navigation__list li{
+    display: inline-block;
+}
+.navigation__list a{
+    color: var(--color-dark);
+}
+.navigation__list a:hover{
+    text-decoration: underline;
+}
+
