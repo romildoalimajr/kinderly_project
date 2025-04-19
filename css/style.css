@@ -682,3 +682,28 @@ a {
     width: 42px;
     height: 38px;
 }
+
+/* Tape*/
+.tape{
+    background-color: var(--color-primary);
+    padding-top: 4rem;
+    padding-bottom: 14rem;
+    border-radius: 10rem 10rem 0 0;
+    overflow-x: clip;
+}
+.tape__content{
+    mask-image: linear-gradient(
+        to right, 
+        transparent, 
+        black 15%, 
+        black 85%, 
+        transparent
+        );
+}
+.tape__item__image{
+    width: 25px;
+    height: 25px;
+}
+.tape__item__title{
+    letter-spacing: 0.1rem;
+}
