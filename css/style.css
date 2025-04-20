@@ -764,3 +764,33 @@ a {
     width: 80px;
     height: 90px;
 }
+.welcome__paths__item{
+    background-color: var(--color-white);
+    border-radius: 3rem;
+    padding: 2.4rem;
+}
+.welcome__paths__item__icon{
+    width: 52px;
+    height: 52px;
+}
+.welcome__shape__1{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 93px;
+    height: 130px;
+}
+.welcome__shape__2{
+    position: absolute;
+    top: 45%;
+    left: 92%;
+    width: 67px;
+    height: 77px;
+}
+.welcome__shape__3{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 79px;
+    height: 131px;
+}
