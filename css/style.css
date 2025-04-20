@@ -3,7 +3,7 @@
     --color-primary: #ff6464;
     --color-secondary: #081646;
     --color-tertiary: #00ba59;
-    --collo-tertiary__dark: #006b36;
+    --color-tertiary__dark: #006b36;
     --color-quaternary: #ffcf55;
     --color-quaternary__dark: #fab70d;
     --color-dark: #333333;
@@ -261,6 +261,20 @@ a {
 
 .text-center {
     text-align: center;
+}
+
+/*Section Title*/
+.section__title{
+    font-size: 3.6rem;
+    margin-bottom: 1.5rem;
+}
+.section__title .section__title__eyebrow{
+    font-family: 'Baloo 2', cursive;
+    display: block;
+    font-weight: 400;
+}
+.section__title .section__title__title{
+    font-size: 100%;
 }
 
 /* Buttons */
@@ -706,4 +720,47 @@ a {
 }
 .tape__item__title{
     letter-spacing: 0.1rem;
+}
+
+/* Welcome*/
+
+.welcome{
+    padding: 7rem 0;
+    border-radius: 10rem 10rem 0 0;
+    background-color: var(--color-quaternary);
+    margin-top: -10rem;
+    overflow-x: clip;
+}
+.welcome__image{
+    height: 335px;
+    width: 273px;
+    z-index: 0;
+}
+.welcome__image img{
+    border-radius: 3rem;
+}
+.welcome__image__shape{
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    background-color: var(--color-white);
+    opacity: 0.32;
+    border-radius: 3rem;
+    z-index: -1;
+    transform: rotate(8deg);
+}
+.welcome__text{
+    background-color: var(--color-quaternary__dark);
+    border-radius: 3rem;
+}
+.welcome__text__content{
+    max-width: 820px;
+}
+.welcome__shape__bolt{
+    position: absolute;
+    top:-30px;
+    right: -30px;
+    width: 80px;
+    height: 90px;
 }
