@@ -62,4 +62,27 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     new TestimonialsSlider();
+
+    /**
+     * FAQS accordions
+    */
+    const accordions = document.querySelectorAll(".faqs__accordion");
+    accordions.forEach((accordion) => {
+        const answer = accordion.querySelector('.faqs__accordion__answer');
+        accordion.addEventListener('click', () => {
+            const isActive = accordion.classList.contains("active");
+
+            accordions.forEach((item) => {
+                const itemAnswer = item.querySelector('.faqs__accordion__answer');
+                itemAnswer.classList.remove("active");
+                itemAnswer.style.height = "0";
+            });
+
+            if(!isActive){
+                accordion.classList.add(".active");
+                answer.style.height = answer.scrollHeight + "px";
+            }
+
+        });
+    });
 });
