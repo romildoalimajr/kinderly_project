@@ -137,12 +137,12 @@ a {
     justify-content: flex-start;
 }
 
-.flex-cols-3 {
+.flex-cols-3 > div {
     flex: 1 1 calc(33.333% - 4rem);
     max-width: 33.33%;
 }
 
-.flex-cols-2 {
+.flex-cols-2 > div{
     flex: 1 1 calc(50% - 4rem);
     max-width: 50%;
 }
