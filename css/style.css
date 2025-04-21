@@ -743,7 +743,14 @@ a {
             transparent,
             black 15%,
             black 85%,
-            transparent);
+            transparent
+        );
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 15%,
+            black 85%,
+            transparent
+        );
 }
 
 .tape__item__image {
@@ -927,14 +934,14 @@ a {
 }
 
 .testimonials__slide {
-    /* display: none;
+    display: none;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; */
+    transition: opacity 0.3s ease-in-out;
 }
 
 .testimonials__slide.active {
-    /* display: block;
-    opacity: 1; */
+    display: block;
+    opacity: 1;
 }
 
 .testimonial__left {
@@ -1019,21 +1026,24 @@ a {
     width: 40px;
     height: 40px;
 }
-.testimonials__shape__1{
+
+.testimonials__shape__1 {
     position: absolute;
     top: 7rem;
     left: 5%;
     width: 112px;
     height: 96px;
 }
-.testimonials__shape__2{
+
+.testimonials__shape__2 {
     position: absolute;
     top: 10rem;
-    left: 12%;
+    right: 12%;
     width: 54px;
     height: 54px;
 }
-.testimonials__shape__3{
+
+.testimonials__shape__3 {
     position: absolute;
     bottom: 4rem;
     left: 3%;
