@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     /**
      * Activities titles
      */
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
             activitiesList.forEach((item) => {
                 //console.log(item);
                 item.style.display = "none";
-                if(item.dataset.type === title.dataset.type || title.dataset.type === 'all'){
+                if (item.dataset.type === title.dataset.type || title.dataset.type === 'all') {
                     item.style.display = "block";
                 }
             });
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
      * Testimonials Slider
      */
 
-    class TestimonialsSlider{
-        constructor(){
+    class TestimonialsSlider {
+        constructor() {
             this.wrapper = document.querySelector("testimonials__wrapper");
             this.slides = Array.from(document.querySelectorAll(".testimonials__slide"));
             this.controls = document.querySelectorAll(".testimonial__control");
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
             this.init();
         }
 
-        init(){
+        init() {
             this.controls.forEach((control) => {
                 control.addEventListener('click', (e) => {
                     const direction = e.currentTarget.dataset.direction;
@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', function(){
             });
         }
 
-        handleSlideChange(direction){
+        handleSlideChange(direction) {
             this.slides[this.currentIndex].classList.remove('active');
 
-            if(direction === "next"){
+            if (direction === "next") {
                 this.currentIndex = (this.currentIndex + 1) % this.slideCount;
-            }else{
-                this.currentIndex = (this.currentIndex - 1 + this.slideCount) % this.slideCount; 
+            } else {
+                this.currentIndex = (this.currentIndex - 1 + this.slideCount) % this.slideCount;
             }
 
             this.slides[this.currentIndex].classList.add('active');
@@ -80,11 +80,31 @@ document.addEventListener('DOMContentLoaded', function(){
                 itemAnswer.style.height = "0";
             });
 
-            if(!isActive){
+            if (!isActive) {
                 accordion.classList.add(".active");
                 answer.style.height = answer.scrollHeight + "px";
             }
 
         });
+    });
+
+    /**
+     * menu trigger
+     */
+    const menuTrigger = document.querySelector('.menu-trigger');
+    const navigation = document.querySelector('.navigation');
+
+    let isMenuOpen = false;
+
+    menuTrigger.addEventListener('click', function () {
+        if (!isMenuOpen) {
+            navigation.classList.add("navigation__active");
+            menuTrigger.classList.add("active");
+        } else {
+            navigation.classList.remove("navigation__active");
+            menuTrigger.classList.remove("active");
+        }
+
+        isMenuOpen = !isMenuOpen;
     });
 });
